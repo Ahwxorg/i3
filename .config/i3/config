@@ -1,4 +1,4 @@
-# Ahwx' i3 config file (v4)
+# i3 config file (v4)
 
 set $mod Mod4
 
@@ -166,7 +166,7 @@ mode "resize" {
 # start programs
 exec picom &
 exec feh --bg-fill ~/.wall.jpg
-exec xfce4-power-manager -c
+exec xfce4-power-manager
 
 # assign a workspace for a program
 assign [class="st"] $ws1
@@ -177,10 +177,10 @@ assign [class="Discord"] $ws10
 # exec --no-startup-id i3-msg 'workspace 10:Chat; exec /bin/discord'
 
 # exec --no-startup-id i3-msg 'workspace 1; exec st; workspace 10; exec discord; workspace 2; exec chromium; workspace 1'
-exec --no-startup-id i3-msg 'workspace 10:; exec /usr/bin/discord'
+exec --no-startup-id i3-msg 'workspace 10; exec /usr/bin/discord'
 
 
-# max float size for my old k56ca
+# max float size for my old k56ca (laptop)
 floating_maximum_size 1366 x 768
 
 focus_follows_mouse yes
