@@ -27,8 +27,12 @@ floating_modifier $mod
 bindsym $mod+Return exec st
 
 # powermenu
-bindsym $mod+x exec powermenu
+bindsym $mod+x exec suslock
 
+# upload
+bindsym $mod+z exec upload
+
+# browser
 bindsym $mod+f exec chromium
 
 # kill focused window
@@ -39,6 +43,7 @@ bindsym $mod+Shift+s exec flameshot gui
 
 # lock screen
 bindsym $mod+l exec betterlockscreen -l
+bindsym $mod+Shift+l exec /home/jaap/dev/suslock -l
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
@@ -48,17 +53,13 @@ bindsym $mod+d exec "/home/jaap/.config/rofi/launchers/type-2/launcher.sh"
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+exec polybar -r
+
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -165,27 +166,22 @@ mode "resize" {
 
 # start programs
 exec picom &
-exec feh --bg-fill ~/.wall.jpg
 exec xfce4-power-manager
+exec feh --bg-fill --randomize ~/pics/wallpyper/*
 
-# assign a workspace for a program
-assign [class="st"] $ws1
-assign [class="chromium"] $ws2
-assign [class="Discord"] $ws10
-# exec --no-startup-id i3-msg 'workspace 1:Term; exec /bin/st'
-# exec --no-startup-id i3-msg 'workspace 2:Web; exec /bin/chromium'
-# exec --no-startup-id i3-msg 'workspace 10:Chat; exec /bin/discord'
+exec --no-startup-id i3-msg 'workspace 10; exec /usr/bin/discord-canary'
 
-# exec --no-startup-id i3-msg 'workspace 1; exec st; workspace 10; exec discord; workspace 2; exec chromium; workspace 1'
-exec --no-startup-id i3-msg 'workspace 10; exec /usr/bin/discord'
-
+# exec /home/jaap/.config/i3/get_wallpapers
 
 # max float size for my old k56ca (laptop)
 floating_maximum_size 1366 x 768
 
 focus_follows_mouse yes
-gaps inner 5
-gaps outer 5
+gaps inner 3
+gaps outer 3
+
+bindsym $mod+Shift+Tab focus left
+bindsym $mod+Tab focus right
 
 bindsym $mod+r mode "resize"
 
@@ -195,20 +191,20 @@ bindsym $mod+r mode "resize"
 #         status_command i3status
 # }
 
-bar {
-       	status_command i3status
-	i3bar_command i3bar -t
-	height 18
-	colors {
-		#background #20242c
-		background #00000000
-		statusline #4c7899
-		separator #4c7899
-
-		focused_workspace  #00000000 #4c7899   #ffffff
-	        active_workspace   #00000000 #00000000 #ffffff
-        	inactive_workspace #00000000 #00000000 #888888
-      		urgent_workspace   #00000000 #00000000 #900000
-        	binding_mode       #00000000 #00000000 #900000
-	}
-}
+# bar {
+#       	status_command i3status
+#	i3bar_command i3bar -t
+#	height 18
+#	colors {
+#	 	#background #20242c
+#	 	background #00000000
+#	 	statusline #4c7899
+#	 	separator #4c7899
+#
+# 		focused_workspace  #00000000 #4c7899   #ffffff
+#	          active_workspace   #00000000 #00000000 #ffffff
+#         	inactive_workspace #00000000 #00000000 #888888
+#       		urgent_workspace   #00000000 #00000000 #900000
+#         	binding_mode       #00000000 #00000000 #900000
+#	 }
+# }
