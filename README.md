@@ -1,5 +1,10 @@
 # i3
-i3-gaps with picom, dunst, polybar and lightdm
+i3-gaps with picom, dunst, polybar and sometimes lightdm
+
+## Notes for all of these:
+* I will probably miss some dependencies for the distro's. Please forgive me...
+* Please don't just copy everything, I am working on this stuff and I will make a script sometime. Idempotency is hard at times.
+* You can do whatever the /**** you want with these dotfiles.
 
 ## Void GNU/Linux
 ![void](https://raw.githubusercontent.com/Ahwxorg/i3/main/pics/void.png)
