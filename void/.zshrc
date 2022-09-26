@@ -28,7 +28,13 @@ fi
 alias zshconf="nvim ~/.zshrc"
 alias i3conf="nvim ~/.config/i3/config"
 alias xbps-install="sudo xbps-install"
-alias ssh-server="ssh youdont@getips"
+alias ssh-server="ssh ahwx@no"
 alias rel="xrdb merge ~/.Xresources && kill -USR1 $(pidof st)"
 
 if [ -e /home/ah/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ah/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+alias xbps-remove="sudo xbps-remove"
+alias cat="bat"
+alias htop="gotop"
+
+echo "Sleep at day and wake up at night."
+echo "This way we should avoid the sunlight."
