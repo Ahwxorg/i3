@@ -9,6 +9,8 @@ i3-gaps with picom, dunst, polybar and sometimes lightdm
 * I use Firefox or Librewolf as browser.
 * I generally spend about 70% of my time in a terminal, so there isn't really anything interesting other than that, except for that I need a status bar and stuff to be productive since issues with info and tray and other stuff otherwise.
 * Generally my background color is: #1e222a.
+
+##### Color scheme
 ![colorscheme](https://raw.githubusercontent.com/Ahwxorg/i3/main/pics/colorscheme.png)
 
 ## Void GNU/Linux
