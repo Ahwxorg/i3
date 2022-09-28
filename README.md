@@ -17,7 +17,12 @@ i3-gaps with picom, dunst, polybar and sometimes lightdm
 ![void](https://raw.githubusercontent.com/Ahwxorg/i3/main/pics/void.png)
 
 ### Notes:
-* Install dependencies from `void/pkgs.txt`.
+* Install dependencies from `void/pkgs.txt` using:
+
+```
+sudo xbps-install $(curl https://raw.githubusercontent.com/Ahwxorg/i3/main/void/pkgs.txt)
+```
+
 
 ## Arch GNU/Linux
 ![arch](https://raw.githubusercontent.com/Ahwxorg/i3/main/pics/arch.png)
