@@ -29,7 +29,7 @@ sudo xbps-install -Su -y
 ![arch](https://raw.githubusercontent.com/Ahwxorg/i3/main/pics/arch.png)
 
 ### Notes:
-* A lot is already installed, please do your own research since I have a custom image which supplies everything to me, and I am not going to share for reasons. 
+* A lot is already installed, please do your own research since I use a custom image which supplies everything to me, and I am not going to share for reasons. 
 
 ## Gentoo (soon)
 ![gentoo](https://raw.githubusercontent.com/Ahwxorg/i3/main/pics/gentoo.png)
