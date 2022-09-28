@@ -21,6 +21,7 @@ i3-gaps with picom, dunst, polybar and sometimes lightdm
 
 ```
 sudo xbps-install $(curl https://raw.githubusercontent.com/Ahwxorg/i3/main/void/pkgs.txt)
+sudo xbps-install -Su -y
 ```
 
 
