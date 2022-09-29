@@ -31,5 +31,7 @@ sudo xbps-install -Su -y
 ### Notes:
 * A lot is already installed, please do your own research since I use a custom image which supplies everything to me, and I am not going to share for reasons. 
 
-## Gentoo (soon)
-![gentoo](https://raw.githubusercontent.com/Ahwxorg/i3/main/pics/gentoo.png)
+### Credits:
+* [siduck](https://github.com/siduck/dotfiles)
+* [axyl os configuration files](https://github.com/axyl-os)
+* I use a dunstrc from someone, but i can't find the source anymore...
