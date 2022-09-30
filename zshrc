@@ -20,16 +20,16 @@ alias sudo="doas"
 alias i3conf="nvim ~/.config/i3/config"
 alias cat="bat"
 alias wall="feh --bg-fill"
-alias pacman-install="doas pacman --needed --noconfirm"
+alias pacman-install="doas pacman -S --needed"
 alias pacman-remove="doas pacman -Rncs"
+alias pacman="doas pacman"
 alias zshconf="nvim ~/.zshrc"
 alias rel="xrdb merge ~/.Xresources && kill -USR1 $(pidof st)"
 alias wallpyper.py="~/dev/wallpyper/wallpyper.py"
 alias reboot="doas reboot now"
-alias yay-install="yay -S --needed --noconfirm"
-alias yay-remove="yay -Rncs"
 alias polyconf='nvim ~/.config/polybar/config.ini'
 alias finddoc="bash ~/dev/scripts/finddoc"
+alias htop="gtop"
 
 complete cf doas
 
